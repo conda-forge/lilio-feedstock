@@ -1,5 +1,5 @@
 {% set name = "lilio" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lilio-{{ version }}.tar.gz
-  sha256: 281d2adec461129da3e227683eefb736251adb6cb30f0f5b74ca3aa8ba2f2b94
+  sha256: 34a61ce876ec929a1220a2c379c1a2fc159d957410fae6474b8673b532ab5c8b
 
 build:
   noarch: python
