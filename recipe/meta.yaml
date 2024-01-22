@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python >=3.9,<3.12
     - hatchling >=1.8.0
     - hatch-vcs
     - pip
   run:
-    - python >=3.8,<3.11
+    - python >=3.9,<3.12
     - netcdf4
     - numpy
     - pandas
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - BSchilperoort
+    - ClaireDons
