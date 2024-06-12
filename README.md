@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@BSchilperoort](https://github.com/BSchilperoort/)
+* [@ClaireDons](https://github.com/ClaireDons/)
 
