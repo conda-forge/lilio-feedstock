@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lilio-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lilio-{{ version }}.tar.gz
   sha256: 75e0a4cc46ed998cf072295c1188e11b61e194290f201dfc0ebeb95b1a1daadd
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python {{ python_min }}
     - hatchling >=1.8.0
     - hatch-vcs
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >={{ python_min }},<3.12
     - netcdf4
     - numpy
     - pandas
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: python package for generating calendars for machine learning timeseries analysis.
